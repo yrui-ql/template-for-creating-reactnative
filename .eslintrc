@@ -12,13 +12,6 @@
     "rules": {
         "no-undef": "error",
         "react/react-in-jsx-scope": "off",
-        "prettier/prettier": [
-            "error",
-            {},
-            {
-                "usePrettierrc": false
-            }
-        ]
     },
     "env": {
         "node": true
