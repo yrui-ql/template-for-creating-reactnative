@@ -33,3 +33,9 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# cache
+.eslintcache
+
+# lock file
+*-lock.yaml

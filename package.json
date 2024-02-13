@@ -1,21 +1,58 @@
 {
   "name": "yhvu",
+  "description": "目前是给养猪用户专用",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "cz": "git add . && czg",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "lint-fix": "lint-staged"
   },
   "dependencies": {
+    "@expo/webpack-config": "~19.0.1",
     "expo": "~50.0.6",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-dom": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-web": "~0.19.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "@types/react": "18.2.55",
+    "commitlint": "^18.6.0",
+    "cz-git": "^1.8.0",
+    "czg": "1.8.0",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "rimraf": "5.0.5",
+    "typescript": "5.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "useEmoji": true
+    }
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,jsx,tsx}": [
+      "prettier --write",
+      "eslint src/* --cache --fix"
+    ]
   },
   "private": true
 }
