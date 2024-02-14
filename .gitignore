@@ -3,11 +3,6 @@
 # dependencies
 node_modules/
 
-# Expo
-.expo/
-dist/
-web-build/
-
 # Native
 *.orig.*
 *.jks
@@ -41,4 +36,3 @@ yarn-error.*
 
 # lock file
 *-lock.yaml
- 

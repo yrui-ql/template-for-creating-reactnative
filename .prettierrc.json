@@ -1,13 +1,13 @@
 {
-  "arrowParens": "avoid",
   "bracketSpacing": true,
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "arrowParens": "avoid",
   "endOfLine": "lf",
   "htmlWhitespaceSensitivity": "ignore",
   "printWidth": 100,
   "proseWrap": "never",
-  "singleQuote": false,
   "tabWidth": 2,
   "useTabs": false,
-  "semi": false,
-  "trailingComma": "none"
+  "semi": false
 }
