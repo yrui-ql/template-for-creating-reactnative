@@ -5,7 +5,7 @@
     "jsx": "preserve",
     "rootDir": "./",
     "module": "ESNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Node10",
     "types": [],
     "allowJs": false,
     "sourceMap": false,
