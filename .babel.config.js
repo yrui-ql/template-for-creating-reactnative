@@ -30,6 +30,7 @@ modules.export = api => {
         },
       ],
       "react-native-reanimated/plugin",
+      "nativewind/babel",
     ],
   }
 }

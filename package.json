@@ -6,17 +6,18 @@
     "cz": "git add . && czg",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
-    "start": "node_modules/.bin/react-native start --experimental-debugger",
-    "android": "node_modules/.bin/react-native run-android",
-    "ios": "node_modules/.bin/react-native run-ios",
-    "windows": "node_modules/.bin/react-native run-windows",
-    "build": "NODE_ENV=production node_modules/.bin/react-native",
+    "start": "react-native start --experimental-debugger",
+    "android": " react-native run-android",
+    "ios": "react-native run-ios",
+    "windows": "react-native run-windows",
+    "build": "NODE_ENV=production react-native",
     "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.20.5",
     "expo-router": "^3.4.7",
     "expo-status-bar": "~1.11.1",
+    "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.4",
@@ -53,6 +54,7 @@
     "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
+    "tailwindcss": "^3.4.1",
     "typescript": "5.3.3"
   },
   "config": {

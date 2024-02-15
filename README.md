@@ -25,8 +25,9 @@
  - [x] 集成cz-git/commit-lint校验
  - [x] 集成prettier/eslint规则校验；
  - [ ] 基于Metro打包构建
- - [x] 使用expo导航路由
- - [x] 使用react-query管理状态
+ - [x] 集成expo导航路由
+ - [x] 集成react-query管理状态
+ - [x] 集成native-wind UI库
  
 
 
