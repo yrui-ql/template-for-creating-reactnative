@@ -4,11 +4,12 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    "plugin:react-hooks/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "@react-native-community",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "@react-native-community",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
     "plugin:prettier/recommended",
   ],
   parserOptions: {
@@ -25,6 +26,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "off",
     "import/no-named-as-default": "off",
     "import/no-named-as-default-member": "off",
+    "no-console": 1,
   },
   settings: {
     react: { version: "detect" },
@@ -53,4 +55,5 @@ module.exports = {
       },
     ],
   },
+  ignorePatterns: ["!.*", "dist", "node_modules", "lib"],
 }

@@ -1,9 +1,9 @@
-import tsBase from "./tsconfig.base.json"
+const tsBase = require("./tsconfig.base.json")
 
 const { NODE_ENV } = process.env
 const isDevelopment = NODE_ENV === "development"
 
-export default api => {
+modules.export = api => {
   api.cache.using(() => process.env.NODE_ENV)
 
   return {

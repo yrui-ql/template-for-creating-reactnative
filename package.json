@@ -10,9 +10,12 @@
     "android": "node_modules/.bin/react-native run-android",
     "ios": "node_modules/.bin/react-native run-ios",
     "windows": "node_modules/.bin/react-native run-windows",
+    "build": "NODE_ENV=production node_modules/.bin/react-native",
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.20.5",
+    "expo-router": "^3.4.7",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -29,6 +32,7 @@
     "@react-native-community/eslint-config": "^3.2.0",
     "@react-native/babel-preset": "^0.73.21",
     "@react-native/metro-config": "^0.73.5",
+    "@tanstack/eslint-plugin-query": "^5.20.1",
     "@tsconfig/react-native": "^3.0.3",
     "@types/react": "18.2.55",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
@@ -67,6 +71,5 @@
       "eslint src/* --cache --cache-location '.cache/.eslintcache' --fix"
     ]
   },
-  "private": true,
-  "type": "module"
+  "private": true
 }
