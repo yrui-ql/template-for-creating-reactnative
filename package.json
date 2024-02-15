@@ -1,6 +1,6 @@
 {
   "name": "yhvi",
-  "description": "目前是给养猪用户专用",
+  "description": "创建ReactNative程序的项目模版",
   "version": "1.0.0",
   "scripts": {
     "cz": "git add . && czg",
