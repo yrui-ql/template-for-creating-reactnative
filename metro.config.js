@@ -4,8 +4,8 @@
  *
  * @format
  */
-const path = require("node:path")
-const { getDefaultConfig, mergeConfig } = require("@react-native/metro-config")
+import { getDefaultConfig, mergeConfig } from "@react-native/metro-config"
+import path from "node:path"
 
 const config = {}
 
